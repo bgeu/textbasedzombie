@@ -1,10 +1,11 @@
-
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <sstream>
 
 using namespace std;
+
+
 int currentArrayPosition;
 int findLengthOfQuestion(int questionNumber);
 string entireFile;
@@ -15,21 +16,19 @@ int main()
 	string line;
 	storyArray = new string[1000];
 	ifstream myfile ("story.txt");
+
 	if (myfile.is_open())
 	{
-	int i=0;
+		int i=0;
 		while (myfile.good())
 		{
 
-			getline(myfile, line);
-			entireFile += line;	
-			storyArray[i] = line;	
-			
+			//getline(myfile, line);
+			myfile >> storyArray[i]; //= line;	
+			entireFile += storyArray[i];	
 			i++;
-			
 		}
-	myfile.close();
-	
+		myfile.close();
 	}
 
 	string temp;
@@ -43,19 +42,19 @@ int main()
 			break;
 	}
 	
-	temp.erase(0,2);
-	cout << temp;
+	temp.replace(0,3, "");
+	cout << temp << endl;
 	
 	char x;
 	findLengthOfQuestion(1);
 	cin >> x;
 	
-	for (int i = currentArrayPosition+1; i < storyArray.size(); i++)
+	for (int i = currentArrayPosition+1; i < storyArray->size(); i++)
 	{
 		if (storyArray[i][0] == x)
 		{
 			int tempPosition = storyArray[i].find("->");
-			string jump  = tempPosition+3;
+			int jump  = tempPosition+3;
 			//convert string to int
 			//now we have the jump and repeat
 			
@@ -79,9 +78,10 @@ int findLengthOfQuestion(int questionNumber)
 
 	int arrayNumber;
 	int count=0;
-	for (int i=0; i < storyArray.size(); i ++)
+	char questionChar = questionString[0];
+	for (int i=0; i < storyArray->size(); i ++)
 	{
-		if (storyArray[i][0] == questionString)
+		if (storyArray[i].at(0) == questionChar)
 		{
 			arrayNumber = i;
 			currentArrayPosition = i;
@@ -90,7 +90,7 @@ int findLengthOfQuestion(int questionNumber)
 		 
 	}	
 
-	for (int i=arrayNumber;  i < storyArray.size(); i ++)
+	for (int i=arrayNumber;  i < storyArray->size(); i ++)
 	{
 		if (!storyArray[i].empty())
 		{	
@@ -98,8 +98,9 @@ int findLengthOfQuestion(int questionNumber)
 			
 			string temp = storyArray[i];
 			int pos = temp.find("->");
-			temp.erase(pos, pos+4);
-			cout << temp;	
+			temp.replace(pos, pos+4, "");
+			//temp.erase(pos, pos+4);
+			cout << temp << endl;	
 			
 		}
 	}
