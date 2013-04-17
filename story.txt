@@ -1,0 +1,49 @@
+1: You're awake in a car submerged in water. Your air is running out rapidly… How should you escape?
+a. Try to open the door -> 2
+b. Try to roll down the windows -> 3
+c. Try to break the window -> 4
+d. Do nothing -> 0
+
+2: You can not open the door...the water pressure is too great. Do you want to try another method?
+a. Try to roll down the windows -> 3
+b. Try to break the window -> 4
+c. Do nothing -> 0
+
+3: The button is not working...the circuitry must be fried. Do you want to try another method?
+a. Try to open the door -> 2
+b. Try to break the window -> 4
+c. Do nothing -> 0
+
+4: You are not strong enough to break the window. You need to find something in the car to help. What should you use?
+a. Screw Driver -> 6 #wp[1]
+b. Tire Iron -> 6 #wp[2]
+c. Briefcase -> 6 #wp[3]
+
+6: You successfully break the window and swim to the surface with your weapon. As soon as you emerge, you find yourself on an unfamiliar coastline, and swim to land. What should you do?
+a. Try to find someone to help you.  -> 7
+b. Try to find your way home. -> 8
+c. You’re hungry, try to find some food. -> 9
+(if #wp[3]) d. Try to open the briefcase and see what is inside. -> 10
+
+
+7: You begin to make your way towards what seems like a town in the far off distance. -> 11
+
+8: You start walking around, but you don’t remember where you live.
+a. Try to find someone to help you.  -> 7
+b. You’re hungry, try to find some food. -> 9
+(if #wp[3]) c. Try to open the briefcase and see what is inside. -> 10
+
+9: Placeholder
+
+10: The briefcase is locked with a 3 digit combination and you can’t see to remember the combination.
+
+11: Placeholder
+
+
+
+
+
+0: You are dead... ... …
+a. Restart -> 1
+b. Quit -> -1
+
