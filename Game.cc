@@ -4,8 +4,6 @@
 #include <sstream>
 
 using namespace std;
-
-
 int currentArrayPosition;
 int findLengthOfQuestion(int questionNumber);
 string entireFile;
@@ -15,16 +13,14 @@ int main()
 {
 	string line;
 	storyArray = new string[1000];
-	ifstream myfile ("story.txt");
+	ifstream myfile ("tempstory.txt");
 
 	if (myfile.is_open())
 	{
 		int i=0;
 		while (myfile.good())
 		{
-
-			//getline(myfile, line);
-			myfile >> storyArray[i]; //= line;	
+			myfile >> storyArray[i]; 	
 			entireFile += storyArray[i];	
 			i++;
 		}
@@ -32,21 +28,30 @@ int main()
 	}
 
 	string temp;
+
 	for (int i=0; i < entireFile.length(); i++)
 	{
-		if (entireFile[i] != '\n')
+		if (entireFile[i] != '+')
 		{
 			temp[i] = entireFile[i];
 		}
 		else
 			break;
 	}
-	
-	temp.replace(0,2, "");
-	cout << temp << endl;
+
+	temp.erase(0,2);
+int i = 0;
+	while(temp[i] != 0)
+{ if(temp[i] == '_')
+cout << ' ';
+else
+	cout << temp[i];
+i++;
+}
+cout << endl;
 	
 	char x;
-	findLengthOfQuestion(1);
+	//findLengthOfQuestion(1);
 	cin >> x;
 	
 	for (int i = currentArrayPosition+1; i < storyArray->size(); i++)
@@ -63,10 +68,11 @@ int main()
 			
 	}
 	
+
 	
 	return 0;
 }
-
+/*
 int findLengthOfQuestion(int questionNumber)
 {
 	string questionString;
@@ -98,11 +104,11 @@ int findLengthOfQuestion(int questionNumber)
 			
 			string temp = storyArray[i];
 			int pos = temp.find("->");
-			temp.replace(pos, pos+3, "");
-			//temp.erase(pos, pos+4);
+			temp.erase(pos, pos+4);
 			cout << temp << endl;	
 			
 		}
 	}
 	return count;
 }
+*/
