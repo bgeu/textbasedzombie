@@ -70,13 +70,13 @@ a._Continue._>0105+@
 0105:_“You_don’t_remember?_I_see._Well,_I’m_Riddle._James_RIddle._You_must_be_exhausted._Why_don’t_you_come_in?”+
 a._Continue._>0106+@
 
-0106:_“I_could_use_some_help._Do_you_mind_gathering_some_of_the_ingredients_for_me?”+
+0106:_“I_could_use_some_help._Do_you_mind_gathering_some_of_the_ingredients_for_me?”+_
 a._Continue._>0107+@
 
 0107:_You_gather_and_help_chop_up_chicken,_beans,_and_potatoes._Yum.+
 a._Continue._>0108+@
 
-0108:_While_you_are_chopping_up_the_chicken,_the_knife_slips_and_cuts_your_finger._James_comes_to_attend_to_the_wound.+
+0108:_While_you_are_chopping_up_the_chicken,_the_knife_slips_and_cuts_your_finger._James_comes_to_attend_to_the_wound._
 a._Continue._>0109+@
 
 0109:_You_thank_him_for_the_meal._He_graciously_offers_you_a_ride_to_the_nearest_town._Hopefully,_you_will_find_more_answers_there.+
@@ -137,7 +137,7 @@ a._Continue_>1008+@
 1008:_Out_of_the_corner_of_your_eye,_you_see_a_light_being_reflected_off_of_Maximillion._You_glance_over_and_Maximillion_is_pulling_a_knife_out_of_his_pocket.+
 a._Continue_>1009+@
 
-1009:_“..._…._…”_You_ask_what_he’s_doing.+
+1009:_“..._…._…”_You_ask_what_he’s_doing.++
 a._Continue_>1010+@
 
 1010:_“You_were_supposed_to_be_dead!_I_sabotaged_the_car_myself!_I_saw_you_plunge_into_the_lake_with_my_own_eyes._Oh_well,_I’ll_just_have_to_kill_you_again!”_He_lunges_at_you_with_the_knife.+
@@ -234,7 +234,10 @@ a._Continue_>2011+@
 2011:_You_look_at_your_hand_and_realize_that_it’s_blue,_and_so_are_the_rest_of_people_attacking_everyone_else._That’s_when_you_realize.._…_...you’re_a_zombie.+
 a._Continue_>8000+@
 
-3000:_You_arrive_at_the_hospital_and_are_checked_into_a_room._A_nurse_comes_in_to_apply_IV.+
+2012:_*Bonk*+
+a._Continue_>2009+@
+
+3000:_You_arrive_at_the_hospital_and_are_checked_into_a_room._A_nurse_comes_in_to_apply_an_IV.+
 a._Continue_>3001+@
 
 3001:_As_the_nurse_attempts_to_apply_the_IV,_blood_spews_out_of_your_arm_splattering_over_the_nurses_face._The_nurse_leaves.+
@@ -261,3 +264,5 @@ a._Continue_>1000+@
 8000:_You_are_dead..._..._…+
 a._Restart_>0001+
 b._Quit_>9999+@
+
+
