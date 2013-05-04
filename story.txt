@@ -162,7 +162,7 @@ b._Go_for_the_knife._>1020+@
 a._Continue_>8000+@
 
 1015:_You_aim_down_the_sights_and_press_the_trigger..._…_…Water_dribbles_out._You’re_about_to_reach_for_the_knife_when_suddenly,_all_you_see_is_red._You_have_been_stabbed_in_the_head.+
-a._Continue_>1016+@
+a._Continue_>8000+@
 
 1020:_You_get_the_knife_and_end_Maximillion’s._The_floor_has_been_painted_red.+
 a._Continue_>1021+@
