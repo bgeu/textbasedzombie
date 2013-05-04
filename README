@@ -9,9 +9,10 @@ b. Try to roll down the windows.
 c. Try to break the window.
 d. Do nothing.
 
-If the user would like to choose the "Try to open the door" option, he/she simply needs to type the a key and press enter. 
+If the user would like to choose the "Try to open the door" option, he/she simply needs to type the "a" key and press enter. 
 
 If the developer desires to modify the code in the future, the provided story.txt file can be modified later by following the correct formating.
+
 The format used for the story.txt file is the following:
 _ represents the spaces between words.
 + represents the end of a line.
