@@ -225,7 +225,7 @@ a._Throw_a_rock_at_it_>2009+
 b._Walk_away_>2010+@
 
 2009:_The_zombie_does_not_seem_irritated_in_the_slightest.+
-a._Throw_a_rock_at_it_>2009+
+a._Throw_a_rock_at_it_>2012+
 b._Walk_away_>2010+@
 
 2010:_You_walk_out_and_notice_that_everyone_is_being_attacked._You_get_closer_to_one_to_examine_it.+
