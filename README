@@ -1,6 +1,11 @@
 TEXT-BASED ZOMBIE ADVENTURE GAME
 
-Run the program by typing ./Infected into terminal. Step through the game by typing in one of the listed options and pressing the ENTER key.
+Run the program by typing compiling the code by typing the following commands in the terminal:
+
+g++ -o Infect Game.cc
+./Infected
+
+Step through the game by typing in one of the listed options and pressing the ENTER key.
 For example:
 
 You awaken in a car submerged in water. Your air is running out rapidly... How should you escape?
