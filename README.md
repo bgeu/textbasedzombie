@@ -24,8 +24,8 @@ If the user would like to choose the "Try to open the door" option, he/she simpl
 If the developer desires to modify the code in the future, the provided story.txt file can be modified later by following the correct formating.
 
 The format used for the story.txt file is the following:
-_ represents the spaces between words.
-+ represents the end of a line.
+An underscore represents the spaces between words.
+The plus sign represents the end of a line.
 @ represents the end of the list of questions.
 Question # formatting is a 4 digit for example question 1 will be 0001.
 -> indicates the question that the answer choice will jump to.
