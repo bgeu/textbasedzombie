@@ -67,16 +67,16 @@ a._Continue._>0104+@
 0104:_“..._…_…”+
 a._Continue._>0105+@
 
-0105:_“You_don’t_remember?_I_see._Well,_I’m_Riddle._James_RIddle._You_must_be_exhausted._Why_don’t_you_come_in?”+
+0105:_“You_don’t_remember?_I_see._Well,_I’m_Riddle._James_Riddle._You_must_be_exhausted._Why_don’t_you_come_in?”+
 a._Continue._>0106+@
 
-0106:_“I_could_use_some_help._Do_you_mind_gathering_some_of_the_ingredients_for_me?”+_
+0106:_“I_could_use_some_help._Do_you_mind_gathering_some_of_the_ingredients_for_me?”+
 a._Continue._>0107+@
 
 0107:_You_gather_and_help_chop_up_chicken,_beans,_and_potatoes._Yum.+
 a._Continue._>0108+@
 
-0108:_While_you_are_chopping_up_the_chicken,_the_knife_slips_and_cuts_your_finger._James_comes_to_attend_to_the_wound._
+0108:_While_you_are_chopping_up_the_chicken,_the_knife_slips_and_cuts_your_finger._James_comes_to_attend_to_the_wound.+
 a._Continue._>0109+@
 
 0109:_You_thank_him_for_the_meal._He_graciously_offers_you_a_ride_to_the_nearest_town._Hopefully,_you_will_find_more_answers_there.+
