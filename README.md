@@ -1,7 +1,7 @@
 TEXT-BASED ZOMBIE ADVENTURE GAME
 
 #Build Instructions
-Run the program by typing compiling the code by typing the following commands in the terminal:
+Compile and run the program by typing the following commands in the terminal:
 
     make
     ./Infected
