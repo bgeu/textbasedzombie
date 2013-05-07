@@ -15,11 +15,16 @@ b._Try_to_break_the_window_>0004+
 c._Do_nothing_>8000+@
 
 0004:_You_are_not_strong_enough_to_break_the_window._You_need_to_find_something_in_the_car_to_help._What_should_you_use?+
-a._Screw_Driver_>0006+
+a._Screw_Driver_>0005+
 b._Tire_Iron_>0006+
-c._Briefcase_>0006+@
+c._Briefcase_>0005+@
 
-0006:_You_successfully_break_the_window_and_swim_to_the_surface._As_soon_as_you_emerge,_you_find_yourself_on_an_unfamiliar_coastline,_and_swim_to_land._What_should_you_do?+
+0005:_The_weapon_was_not_strong_enough._Try_again._+
+a._Screw_Driver_>0005+
+b._Tire_Iron_>0006+
+c._Briefcase_>0005+@
+
+0006:_You_successfully_break_the_window_and_swim_to_the_surface_leaving_your_weapon_behind._As_soon_as_you_emerge,_you_find_yourself_on_an_unfamiliar_coastline,_and_swim_to_land._What_should_you_do?+
 a._Try_to_find_someone_to_help_you._>0007+
 b._Try_to_find_your_way_home._>0008+
 c._You’re_hungry,_try_to_find_some_food._>0100+@
@@ -35,10 +40,10 @@ b._You’re_hungry,_try_to_find_some_food._>0100+@
 0009:_You_reach_into_your_pocket_and_find_your_cell_phone._HTC_One._Very_nice_phone......._…._…._It_doesn’t_work._You_head_towards_the_payphone.+
 a._Continue._>0010+@
 
-0010:_You_arrive_at_the_payphone_and_are_about_to_call_home...but_you_can’t_remember_your_number._A_sticker_on_the_payphone_says_“CALL_911_FOR_HELP”_and_“1-800-COLLECT_FOR_COLLECT_CALLS”_You_decide_to_call_911.+
+0010:_You_arrive_at_the_payphone_and_are_about_to_call_home...but_you_can’t_remember_your_number._A_sticker_on_the_payphone_says_“CALL_911_FOR_HELP”_and_“1_800_COLLECT_FOR_COLLECT_CALLS”_You_decide_to_call_911.+
 a._Continue._>0011+@
 
-0011:__“911._What’re_your_emergency?”+
+0011:_“911._What’re_your_emergency?”+
 a._Continue_>0012+@
 
 0012:_“..._…_…”+
@@ -48,7 +53,7 @@ a._Continue_>0013+@
 a._Continue_>0014+@
 
 0014:_The_police_arrive_shortly_and_ask_you_questions_to_no_avail._You_are_unable_to_answer_any_of_their_questions._You_are_diagnosed_to_have_amnesia_and_they_decide_to_take_you_to_the_hospital.+
-a._Shake_hands_with_the__police_>3000+
+a._Shake_hands_with_the_police_>3000+
 b._Go_straight_to_the_hospital._>3000+@
 
 0100:_*Growwwwwwl*_After_hearing_your_stomach,_you_realize_that_you_are_pretty_hungry.+
@@ -70,16 +75,58 @@ a._Continue._>0105+@
 0105:_“You_don’t_remember?_I_see._Well,_I’m_Riddle._James_Riddle._You_must_be_exhausted._Why_don’t_you_come_in?”+
 a._Continue._>0106+@
 
-0106:_“I_could_use_some_help._Do_you_mind_gathering_some_of_the_ingredients_for_me?”+
-a._Continue._>0107+@
+0106:_“I_could_use_some_help._Do_you_mind_gathering_some_of_the_ingredients_for_me?_I_need_chicken,_durian,_and_herbs.”+
+a._Go_search_for_the_chicken_in_the_woods._>0107+
+b._Go_search_for_the_chicken_in_the_backyard._>0108+
+c._Go_search_for_the_chicken_in_your_car._>0109+
+d._Go_search_for_the_chicken_in_the_fridge._>0110+@
 
-0107:_You_gather_and_help_chop_up_chicken,_beans,_and_potatoes._Yum.+
-a._Continue._>0108+@
+0107:_..._..._..._No_chicken_in_sight._You're_unsure_why_you_came_out_here,_especially_after_knowing_there_were_no_animals_in_the_vicinity.+
+a._Go_search_for_the_chicken_in_the_backyard._>0108+
+b._Go_search_for_the_chicken_in_your_car._>0109+
+c._Go_search_for_the_chicken_in_the_fridge._>0110+@
 
-0108:_While_you_are_chopping_up_the_chicken,_the_knife_slips_and_cuts_your_finger._James_comes_to_attend_to_the_wound.+
-a._Continue._>0109+@
+0108:_Seems_James_has_a_chicken_coop._You_end_that_chicken's_poor_life._Bless_his_heart._Next_up,_find_that_durian.+
+a._Search_the_woods_for_durian._>0111+
+b._Search_James_for_durian._>0112+
+c._Search_the_fridge_for_durian._>0113+
+d._Search_the_chimney_for_durian._>0114+@
 
-0109:_You_thank_him_for_the_meal._He_graciously_offers_you_a_ride_to_the_nearest_town._Hopefully,_you_will_find_more_answers_there.+
+0109:_Why_the_heck_would_it_be_in_the_car?+
+a._Go_search_for_the_chicken_in_the_woods._>0107+
+b._Go_search_for_the_chicken_in_the_backyard._>0108+
+c._Go_search_for_the_chicken_in_the_fridge._>0110+@
+
+0110:_Mustard._Ketchup._Milk._Yogurt...._But_no_chicken_to_be_found.+
+a._Go_search_for_the_chicken_in_the_woods._>0107+
+b._Go_search_for_the_chicken_in_the_backyard._>0108+
+c._Go_search_for_the_chicken_in_your_car._>0109+@
+
+0111:_Dang._Looks_like_it's_on_the_tree..._..._..._You_climbed_up_and_cut_it_down._Like_a_bawse._Better_find_the_herbs._The_stench_is_getting_unbearable._Time_to_look_for_the_herbs._Thankfully,_you_found_the_herbs_on_your_way_back_inside.+
+a._Continue_>0157+@
+
+0112:_James_got_mad_and_slapped_you._Perhaps_patting_him_down_wasn't_the_best_idea.+
+a._Search_the_woods_for_durian._>0111+
+b._Search_the_fridge_for_durian._>0113+
+c._Search_the_chimney_for_durian._>0114+@
+
+0113:_Mustard._Ketchup._Milk._Yogurt...._But_no_durian_to_be_found.+
+a._Search_the_woods_for_durian._>0111+
+b._Search_James_for_durian._>0112+
+c._Search_the_chimney_for_durian._>0114+@
+
+0114:_I_don't_think_Santa_would_give_anyone_durian_for_Christmas._Try_again.+
+a._Search_the_woods_for_durian._>0111+
+b._Search_James_for_durian._>0112+
+c._Search_the_fridge_for_durian._>0113+@
+
+0157:_You_help_prepare_the_meal._Should_be_interesting.+
+a._Continue._>0158+@
+
+0158:_While_you_are_chopping_up_the_chicken,_the_knife_slips_and_cuts_your_finger._James_comes_to_attend_to_the_wound.+
+a._Continue._>0159+@
+
+0159:_You_thank_him_for_the_meal._He_graciously_offers_you_a_ride_to_the_nearest_town._Hopefully,_you_will_find_more_answers_there.+
 a._Continue._>1000+@
 
 0300:_You_continue_walking_along_your_way_in_the_hopes_that_you_will_find_food._Up_ahead_you_see_a_grocery_store.+
@@ -131,7 +178,18 @@ a._Continue_>1006+@
 1006:_James_leaves_and_you_are_left_alone_with_Maximillion...._…_…_…_Maximillion_offers_you_a_ride_to_your_house.+
 a._Continue_>1007+@
 
-1007:_You_arrive_home._It_seems_you_lived_in_a_fairly_large_house._It_seems_to_be_littered_with_several_pictures_of_Maximillion._You_guys_actually_were_really_good_friends!+
+1007:_You_arrive_home._It_seems_you_lived_in_a_fairly_large_house._In_the_backyard,_you_see_a_slide.+
+a._You_can't_resist._>1016+
+b._Head_back_inside._>1018+@
+
+1016:_Weeeeeeeeeeeee!+
+a._Continue_>1017+@
+
+1017:_That_rush,_man._Go_down_again?+
+a._Of_course._>1016+
+b._Nah._>1018+@
+
+1018:_You_head_inside._The_house_seems_to_be_littered_with_several_pictures_of_Maximillion._You_guys_actually_were_really_good_friends!+
 a._Continue_>1008+@
 
 1008:_Out_of_the_corner_of_your_eye,_you_see_a_light_being_reflected_off_of_Maximillion._You_glance_over_and_Maximillion_is_pulling_a_knife_out_of_his_pocket.+
@@ -143,7 +201,11 @@ a._Continue_>1010+@
 1010:_“You_were_supposed_to_be_dead!_I_sabotaged_the_car_myself!_I_saw_you_plunge_into_the_lake_with_my_own_eyes._Oh_well,_I’ll_just_have_to_kill_you_again!”_He_lunges_at_you_with_the_knife.+
 a._Run_away._>1011+
 b._Dodge._>1012+
-c._Fight_>1014+@
+c._Fight_>1029+@
+
+1029:_You_idiot._You_have_no_weapon_to_fight_with._He_slashes_you_and_you're_left_with_a_wound_on_your_left_cheek._He's_getting_ready_to_strike_again.+
+a._Run_away._>1011+
+b._Dodge._>1012+@
 
 1011:_You_run_towards_the_door..._…_…_…_But_he_catches_you._Your_life_flashes_before_your_eyes.+
 a._Continue_>8000+@
@@ -164,7 +226,55 @@ a._Continue_>8000+@
 1015:_You_aim_down_the_sights_and_press_the_trigger..._…_…Water_dribbles_out._You’re_about_to_reach_for_the_knife_when_suddenly,_all_you_see_is_red._You_have_been_stabbed_in_the_head.+
 a._Continue_>8000+@
 
-1020:_You_get_the_knife_and_end_Maximillion’s_life._The_floor_has_been_painted_red.+
+1020:_You_get_the_knife_and_lash_out_at_Maximillion_leaving_a_gash_on_the_right_side_of_his_face.+
+a._Continue_>1030+@
+
+1030:_"Gahhhhhhh!_My_eye!!_You_will_pay_for_this!"_He_runs_to_the_kitchen.+
+a._Chase_after_him._>1031+
+b._Run_to_the_door._>1032+
+c._Throw_your_knife_at_him._>1033+
+d._Reach_for_the_gun._>1034+@
+
+1031:_When_you_arrive_at_the_kitchen,_you_see_James_pointing_a_gun_at_you.+
+a._Duck._>1035+
+b._Throw_your_knife._>1036+
+c._Insult_him._>1037+@
+
+1032:_You_run_towards_to_the_door_when_suddenly_you_feel_a_sharp_pain_in_your_upper_back._You_turn_around_to_see_Maximillion_holding_a_gun.+
+a._Continue_>8000+@
+
+1033:_You_throw_your_knife_pretending_to_be_Naruto_but_you_let_go_too_early._It_ends_up_two_feet_in_front_of_you._You_run_to_pick_it_up_when_suddenly_your_head_feels_really_cold._You_were_shot_in_the_head_by_Maximillion.+
+a._Continue_>8000+@
+
+1034:_You_aim_down_the_sights_and_press_the_trigger..._…_…Water_dribbles_out._Suddenly,_all_you_see_is_red._You_have_been_shot_in_the_head.+
+a._Continue_>8000+@
+
+1035:_You_duck._Unforunately,_you_did_not_move_faster_than_the_bullet.+
+a._Continue_>8000+@
+
+1036:_You_throw_your_knife,_but_you_miss_terribly._It_was_enough_to_divert_his_attention.+
+a._Tackle_him._>1041+
+b._Accept_your_death._>1040+@
+
+1037:_"..._..._..."_James_does_not_seem_pleased.+
+a._Continue_>1038+@
+
+1038:_He_tells_you_that_that_was_a_terrible_insult.+
+a._Continue_>1039+@
+
+1039:_"..._..._..."_You_tell_him_that_his_face_is_a_terrible_insult.+
+a._Continue_>8000+@
+
+1040:_Why..._He_shoots_you.+
+a._Continue_>8000+@
+
+1041:_You_run_towards_him_in_an_attempt_to_pry_the_gun_away_from_him._Maximillion_notices_you_and_tries_to_point_the_gun_at_you_but_you_manage_to_push_him_onto_the_ground_before_he_is_able_to.+
+a._Continue_>1042+@
+
+1042:_"I_had_it_all._A_well_paying_job._A_nice_family._But_then_YOU_had_to_come_into_my_life._Doing_better_than_me_in_everything...even_my_wife_started_comparing_me_to_you..._..._Get_out_of_my_life!"+
+a._Continue_>1043+@
+
+1043:_He_is_slowly_overpowering_you_and_has_managed_to_point_the_gun_at_your_head._Both_of_you_are_lying_in_a_small_puddle_of_blood,_both_yours_and_his._You_close_your_eyes_accepting_your_demise..._...._..._However,_you_are_still_alive._You_look_at_Maximillion_to_see_his_mouth_foaming._He_is_dead.+
 a._Continue_>1021+@
 
 1021:_You_decide_to_hide_the_body_in_the_bathtub_for_now._You_decide_to_stay_at_the_house_for_the_night_and_deal_with_the_body_tomorrow.+
@@ -186,10 +296,22 @@ a._Continue_>1026+@
 a._Investigate_>1027+
 b._Run_away_>1028+@
 
-1027:_You_head_towards_the_place_where_everyone_seems_to_be_avoiding,_only_to_find_bloodshed._People_attacking_other_people,_one_of_them_being_Maximillion._Maximillion_is_attacking_and_killing_other_people_and_then_he_spots_you..._…_…_but_for_some_reason,_he_doesn’t_attack_you.+
-a._Continue_>1028+@
+1027:_You_head_towards_the_place_where_everyone_seems_to_be_avoiding,_only_to_find_bloodshed._People_attacking_other_people,_one_of_them_being_Maximillion._Maximillion_is_attacking_and_killing_other_people_and_then_he_spots_you..._…_…_but_for_some_reason,_he_doesn’t_attack_you._Why...?+
+a._Because_you_guys_were_such_good_friends_>1048+
+b._You're_somehow_immune_to_zombies_>1049+
+c._Did...I_do_this?_>1050+@
 
-1028:_You_look_at_your_hand_and_realize_that_it’s_blue...You_look_at_Maximillion’s_hand...it’s_also_blue,_and_so_are_the_rest_of_people_attacking_everyone_else._That’s_when_you_realize.._…_...you’re_a_zombie.+
+1048:_That_couldn't_be_the_reason...after_all,_he_tried_to_kill_you_earlier.+
+a._You're_somehow_immune_to_zombies_>1049+
+b._Did...I_do_this?_>1050+@
+
+1029:_That_may_be_true...but_why_aren't_they_attacking_you?+
+a._Did...I_do_this?_>1050+@
+
+1050:_You_look_at_your_hand_and_realize_that_it’s_blue...You_look_at_Maximillion’s_hand...it’s_also_blue,_and_so_are_the_rest_of_people_attacking_everyone_else.+
+a._Continue_>1051+@
+
+1051:_Suddenly_it_all_makes_sense._Everyone_you've_come_into_contact_with_went_insane_and_they_went_around_making_other_people_behave_the_same_way...You_carried_a_virus_inside_you_the_entire_time...
 a._Continue_>8000+@
 
 2000:_You_are_escorted_to_jail_and_thrown_into_a_cell._You_look_around_and_see_a_large_man_in_the_cell_with_you._You_guess_you_have_no_option_but_to_get_along_with_him.+
@@ -261,7 +383,7 @@ a._Continue_>3003+@
 a._Continue_>1000+@
 
 
-8000:_You_are_dead..._..._…+
+8000:_Game_over..._..._…+
 a._Restart_>0001+
 b._Quit_>9999+@
 
